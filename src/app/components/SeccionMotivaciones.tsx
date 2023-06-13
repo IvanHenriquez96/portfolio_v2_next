@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export const SeccionMotivaciones = () => {
   return (
-    <div className="" data-aos="zoom-in">
+    <div className="animate-fade">
       <div className="grid grid-cols-1 md:grid-cols-3  text-center md:px-20">
         <div className="col-span-2">
           <h2 className="text-5xl font-bold m-5">Motivaciónes</h2>
@@ -20,7 +22,7 @@ export const SeccionMotivaciones = () => {
           </p>
         </div>
         <div className="m-auto p-5 ">
-          <img src={"/pantalla.png"} width={300} alt="icono pantalla" />
+          <Image src={"/pantalla.png"} width={300} height={300} alt="icono pantalla" />
         </div>
       </div>
     </div>

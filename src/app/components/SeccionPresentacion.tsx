@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export const SeccionPresentacion = () => {
   return (
-    <div className="" data-aos="zoom-in">
+    <div className="animate-fade">
       <div className="grid grid-cols-1 md:grid-cols-3  text-center md:px-20">
         <div className="col-span-2">
           <h2 className="text-5xl font-bold m-5">¡Hola a todos!</h2>
@@ -13,12 +15,7 @@ export const SeccionPresentacion = () => {
           </p>
         </div>
         <div className="m-auto p-5 ">
-          <img
-            src={"/saludo.png"}
-            width={200}
-            alt="icono saludo"
-            className="animate__animated animate__fadeIn"
-          />
+          <Image src={"/saludo.png"} width={200} height={200} alt="icono saludo" />
         </div>
       </div>
     </div>
