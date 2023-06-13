@@ -1,16 +1,16 @@
-import Image from "next/image";
+// import Image from "next/image";
 
-import fotoPerfil from "public/perfil.png";
+// import fotoPerfil from "public/perfil.png";
 
 export const Hero = () => {
   return (
     <div className="grid grid-cols-1 p-7 md:grid-cols-5 gap-4  h-screen items-center">
       <div className="col-span-3">
         <div className="text-center">
-          <h1 className="text-6xl font-bold" data-aos="fade-down">
+          <h1 className="text-6xl font-bold animate-fade-down animate-once animate-ease-linear">
             IVÁN HENRÍQUEZ
           </h1>
-          <h2 className="text-4xl mt-3 font-bold" data-aos="fade-up">
+          <h2 className="text-4xl mt-3 font-bold animate-fade-up animate-once animate-ease-linear">
             Web Developer
           </h2>
         </div>
@@ -20,53 +20,49 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <img
-              src={logoGithub}
+            <img
+              src={"/github_logo.png"}
               width={60}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="300"
-            /> */}
+              alt="logo github"
+              className="animate-fade-up animate-once animate-delay-500"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/ihenriquez96"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <img
-              src={logoLinkedin}
+            <img
+              src={"/linkedin.png"}
               width={60}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="500"
-            /> */}
+              alt="logo linkedin"
+              className="animate-fade-up animate-once animate-delay-700"
+            />
           </a>
           <a
             href="https://www.instagram.com/nachostrife/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <img
-              src={logoInstagram}
+            <img
+              src={"/ig.png"}
               width={60}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="700"
-            /> */}
+              alt="logo instagram"
+              className="animate-fade-up animate-once animate-delay-1000"
+            />
           </a>
         </div>
 
-        <p
-          className="text-center md:text-2xl text-gray-200"
-          data-aos="fade-in"
-          data-aos-delay="500"
-        >
+        <p className="text-center md:text-2xl text-gray-200 animate-fade-up">
           Desarrollador Full Stack - PHP Laravel - Node - React - MYSQL
         </p>
       </div>
       <div className="mx-auto col-span-2">
-        {/* <img src={fotoPerfil} alt="" className="w-3/4 mx-auto" data-aos="zoom-in" /> */}
-        <Image src={"/perfil.png"} width={300} height={300} alt="foto perfil"></Image>
+        <img
+          src={"/perfil.png"}
+          alt="foto de perfil"
+          className="w-3/4 mx-auto animate-fade animate-once animate-delay-500 "
+        />
       </div>
     </div>
   );
