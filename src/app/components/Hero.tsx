@@ -1,5 +1,7 @@
 // import Image from "next/image";
 
+import Image from "next/image";
+
 // import fotoPerfil from "public/perfil.png";
 
 export const Hero = () => {
@@ -20,36 +22,39 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={"/github_logo.png"}
               width={60}
+              height={60}
               alt="logo github"
               className="animate-fade-up animate-once animate-delay-500"
-            />
+            ></Image>
           </a>
           <a
             href="https://www.linkedin.com/in/ihenriquez96"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={"/linkedin.png"}
               width={60}
+              height={60}
               alt="logo linkedin"
               className="animate-fade-up animate-once animate-delay-700"
-            />
+            ></Image>
           </a>
           <a
             href="https://www.instagram.com/nachostrife/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={"/ig.png"}
               width={60}
+              height={60}
               alt="logo instagram"
               className="animate-fade-up animate-once animate-delay-1000"
-            />
+            ></Image>
           </a>
         </div>
 
@@ -58,11 +63,20 @@ export const Hero = () => {
         </p>
       </div>
       <div className="mx-auto col-span-2">
-        <img
+        <div className="w-3/4 mx-auto">
+          <Image
+            src={"/perfil.png"}
+            width={1000}
+            height={1000}
+            alt="foto de perfil"
+            className=" animate-fade animate-once animate-delay-500"
+          ></Image>
+        </div>
+        {/* <img
           src={"/perfil.png"}
           alt="foto de perfil"
           className="w-3/4 mx-auto animate-fade animate-once animate-delay-500 "
-        />
+        /> */}
       </div>
     </div>
   );
