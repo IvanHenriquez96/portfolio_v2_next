@@ -6,6 +6,8 @@ export const SeccionMotivaciones = () => {
       <div className="grid grid-cols-1 md:grid-cols-3  text-center md:px-20">
         <div className="col-span-2">
           <h2 className="text-5xl font-bold m-5">Motivaciónes</h2>
+          {/* <div className="h-1 w-2/3 md:w-2/4 mx-auto bg-indigo-500 rounded"></div> */}
+
           <p className="p-5 md:px-20 my-5 text-justify font-light">
             Me encanta la tecnología💙 pero me siento muy lejos de ser un robot! 🤖. Mi
             principal motivación a la hora de desarrollar es la comodidad y felicidad del

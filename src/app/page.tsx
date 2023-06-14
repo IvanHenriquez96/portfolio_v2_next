@@ -1,4 +1,6 @@
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
+import { SeccionInvLikedin } from "./components/SeccionInvLikedin";
 import { SeccionMotivaciones } from "./components/SeccionMotivaciones";
 import { SeccionPresentacion } from "./components/SeccionPresentacion";
 import { SeccionProyectos } from "./components/SeccionProyectos";
@@ -20,6 +22,10 @@ export default function Home() {
       <br />
       <br />
       <SeccionProyectos />
+      <SeccionInvLikedin />
+      <br />
+      <br />
+      <Footer />
     </main>
   );
 }

@@ -5,8 +5,7 @@ const proyectos = [
   {
     nombre: "TO DO APP",
     descripcion: "El legendario TO DO APP para probar las acciones CRUD!",
-    tecnologias: "",
-    // url_img: "https://cdn-icons-png.flaticon.com/512/4472/4472515.png",
+    tecnologias: "React",
     url_img: "/proyecto1_logo.png",
     url_sitio: "https://naughty-volhard-5322c3.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/AplicacionCrudTareasReactJS",
@@ -14,7 +13,7 @@ const proyectos = [
   {
     nombre: "APP PARADEROS - API REDBUS",
     descripcion: "¿Quieres saber en cuantos minutos llega la micro?",
-    // url_img: "https://cdn-icons-png.flaticon.com/512/1023/1023462.png",
+    tecnologias: "React",
     url_img: "/proyecto2_logo.png",
     url_sitio: "https://6268954ed7009d26ee037fdf--gorgeous-blancmange-9e86f6.netlify.app",
     url_repo: "https://github.com/IvanHenriquez96/2022_transporte_app",
@@ -23,7 +22,7 @@ const proyectos = [
   {
     nombre: "JUEGO - PIEDRA PAPEL O TIJERAS!",
     descripcion: "Desafía a la CPU y obtén los logros secretos!",
-    // url_img: "https://ihenriquez.dev/mage.png",
+    tecnologias: "Vanilla JS",
     url_img: "/proyecto3_logo.png",
     url_sitio: "https://ihenriquez-piedrapapeltijeras.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/piedraPapelTijerasJSVanilla",
@@ -33,16 +32,16 @@ const proyectos = [
     nombre: "APP - PORTAL DE ADOPCIÓN!",
     descripcion:
       "En esta web podrás encontrar a diversas mascotas para adoptar de distintas fundaciones!",
-    // url_img: "https://cdn-icons-png.flaticon.com/512/5267/5267453.png",
+    tecnologias: "React, Firebase",
     url_img: "/proyecto4_logo.png",
     url_sitio: "https://ihenriquez-adoptappcl.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/AdoptappCL",
   },
   {
-    nombre: "APP - PUNTO DE VENTA CINE | REACT + REDUX!",
+    nombre: "APP - PUNTO DE VENTA CINE",
     descripcion:
       "E-commerce, agrega tus tickets al carrito a través de un selector de asientos dinámico!",
-    // url_img: "https://cdn-icons-png.flaticon.com/512/1038/1038100.png",
+    tecnologias: "React, Redux",
     url_img: "/proyecto5_logo.png",
     url_sitio: "https://ihenriquez-app-cine.netlify.app",
     url_repo: "https://github.com/IvanHenriquez96/punto-venta-cine",
@@ -50,16 +49,16 @@ const proyectos = [
   {
     nombre: "APP - RETRO POKEDEX | REACT",
     descripcion: "Pokedex aplicando un estilo retro, para los mas nostálgicos",
-    // url_img: "https://i.pinimg.com/236x/64/76/e2/6476e2675a5f24d72531c8f748cc8eaa.jpg",
+    tecnologias: "React",
     url_img: "/proyecto6_logo.jpg",
     url_sitio: "https://ihenriquez-pokedex.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/pokedex",
   },
   {
-    nombre: "APP - Caculadora de macros | NEXTJS - HYBRID - SSG/CSR",
+    nombre: "APP - Caculadora de macros",
     descripcion:
       "Calcula tu Tasa Metabolica Basal y según tu cantidad de actividad física y objetivos descubre cuantas calorías al día deberías consumir diviendola en Carbohidratos, Proteinas y Grasas.",
-    // url_img: "https://cdn-icons-png.flaticon.com/512/1048/1048913.png",
+    tecnologias: "Nextjs, Hybrid SSG/CSR",
     url_img: "/proyecto7_logo.png",
     url_sitio: "https://ihenriquez-calculadora-macros.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/calculadora_macros",
@@ -69,9 +68,9 @@ const proyectos = [
 export const SeccionProyectos = () => {
   return (
     <>
-      <section>
+      <section className="animate-fade">
         <h2 className="text-5xl font-bold m-5 text-center ">Proyectos realizados</h2>
-        <div className="h-1 w-2/4 mx-auto bg-indigo-500 rounded"></div>
+        {/* <div className="h-1 w-2/3 md:w-1/4 mx-auto bg-indigo-500 rounded"></div> */}
 
         <p className="p-5 md:px-20 md:mx-20 my-5 text-justify font-light">
           Estoy constantemente estudiando nuevas tecnologías y desarrollando nuevos
@@ -84,27 +83,15 @@ export const SeccionProyectos = () => {
             return (
               <div key={index} className="xl:w-1/4 md:w-1/2 p-4">
                 <div className="bg-gray-100 p-6 rounded-lg">
-                  {/* <img
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                  /> */}
-
-                  {/* <img
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={proyecto.url_img}
-                    alt="content"
-                  /> */}
-
                   <Image
                     src={proyecto.url_img}
                     width={1000}
                     height={1000}
                     alt="imagen proyecto"
-                    className="w-full object-cover object-center"
+                    className="w-1/2 mx-auto md:w-full object-cover object-center"
                   ></Image>
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                  <h3 className="tracking-widest text-indigo-700  font-medium title-font my-3">
+                    {proyecto.tecnologias.toUpperCase()}
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                     {proyecto.nombre}
@@ -113,9 +100,9 @@ export const SeccionProyectos = () => {
                     {proyecto.descripcion}
                   </p>
                   <br />
-                  <div className="border-2 p-1 rounded-2xl border-indigo-700 text-center my-3">
+                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 ">
                     <a
-                      className="text-indigo-700 inline-flex items-center"
+                      className="text-indigo-700 inline-flex items-center group-hover:text-gray-50 "
                       href={proyecto.url_sitio}
                       target="_blank"
                     >
@@ -133,9 +120,9 @@ export const SeccionProyectos = () => {
                       </svg>
                     </a>
                   </div>
-                  <div className="border-2 p-1 rounded-2xl border-indigo-700 text-center my-2">
+                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 ">
                     <a
-                      className="text-indigo-700 inline-flex items-center"
+                      className="text-indigo-700 inline-flex items-center group-hover:text-gray-50"
                       href={proyecto.url_repo}
                       target="_blank"
                     >
@@ -158,6 +145,8 @@ export const SeccionProyectos = () => {
             );
           })}
         </div>
+        <br />
+        <p className="text-4xl my-14 font-bold text-center ">¡Seguimos Trabajando! 🚀</p>
       </section>
     </>
   );
