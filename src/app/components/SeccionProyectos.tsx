@@ -5,7 +5,7 @@ const proyectos = [
   {
     nombre: "TO DO APP",
     descripcion: "El legendario TO DO APP para probar las acciones CRUD!",
-    tecnologias: "React",
+    tecnologias: ["React"],
     url_img: "/proyecto1_logo.png",
     url_sitio: "https://naughty-volhard-5322c3.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/AplicacionCrudTareasReactJS",
@@ -13,7 +13,7 @@ const proyectos = [
   {
     nombre: "APP PARADEROS - API REDBUS",
     descripcion: "¿Quieres saber en cuantos minutos llega la micro?",
-    tecnologias: "React",
+    tecnologias: ["React"],
     url_img: "/proyecto2_logo.png",
     url_sitio: "https://6268954ed7009d26ee037fdf--gorgeous-blancmange-9e86f6.netlify.app",
     url_repo: "https://github.com/IvanHenriquez96/2022_transporte_app",
@@ -22,7 +22,7 @@ const proyectos = [
   {
     nombre: "JUEGO - PIEDRA PAPEL O TIJERAS!",
     descripcion: "Desafía a la CPU y obtén los logros secretos!",
-    tecnologias: "Vanilla JS",
+    tecnologias: ["Vanilla JS"],
     url_img: "/proyecto3_logo.png",
     url_sitio: "https://ihenriquez-piedrapapeltijeras.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/piedraPapelTijerasJSVanilla",
@@ -32,7 +32,7 @@ const proyectos = [
     nombre: "APP - PORTAL DE ADOPCIÓN!",
     descripcion:
       "En esta web podrás encontrar a diversas mascotas para adoptar de distintas fundaciones!",
-    tecnologias: "React, Firebase",
+    tecnologias: ["React", "Firebase"],
     url_img: "/proyecto4_logo.png",
     url_sitio: "https://ihenriquez-adoptappcl.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/AdoptappCL",
@@ -41,7 +41,7 @@ const proyectos = [
     nombre: "APP - PUNTO DE VENTA CINE",
     descripcion:
       "E-commerce, agrega tus tickets al carrito a través de un selector de asientos dinámico!",
-    tecnologias: "React, Redux",
+    tecnologias: ["React", "Redux"],
     url_img: "/proyecto5_logo.png",
     url_sitio: "https://ihenriquez-app-cine.netlify.app",
     url_repo: "https://github.com/IvanHenriquez96/punto-venta-cine",
@@ -49,7 +49,7 @@ const proyectos = [
   {
     nombre: "APP - RETRO POKEDEX | REACT",
     descripcion: "Pokedex aplicando un estilo retro, para los mas nostálgicos",
-    tecnologias: "React",
+    tecnologias: ["React"],
     url_img: "/proyecto6_logo.jpg",
     url_sitio: "https://ihenriquez-pokedex.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/pokedex",
@@ -58,10 +58,20 @@ const proyectos = [
     nombre: "APP - Caculadora de macros",
     descripcion:
       "Calcula tu Tasa Metabolica Basal y según tu cantidad de actividad física y objetivos descubre cuantas calorías al día deberías consumir diviendola en Carbohidratos, Proteinas y Grasas.",
-    tecnologias: "Nextjs, Hybrid SSG/CSR",
+    tecnologias: ["Nextjs", "Hybrid SSG/CSR"],
     url_img: "/proyecto7_logo.png",
     url_sitio: "https://ihenriquez-calculadora-macros.netlify.app/",
     url_repo: "https://github.com/IvanHenriquez96/calculadora_macros",
+  },
+
+  {
+    nombre: "WEB SCRAPING - Seguimiento productos Weplay.cl",
+    descripcion:
+      "Agrega tu productos de la tienda Weplay.cl  y hazle seguimiento de su precio a lo largo del tiempo, gracias a la API que desarrollé la cual hace 'Web Scraping' los datos se actualizan a diario en la base de datos gracias a un crontab.",
+    tecnologias: ["Nextjs", "Hybrid SSG/CSR", "Puppetter", "React ChartsJS", "MongoDB"],
+    url_img: "/proyecto8_logo.png",
+    url_sitio: "https://web-scraping-sigma.vercel.app/",
+    url_repo: "https://github.com/IvanHenriquez96/web_scraping",
   },
 ];
 
@@ -90,9 +100,22 @@ export const SeccionProyectos = () => {
                     alt="imagen proyecto"
                     className="w-1/2 mx-auto md:w-full object-cover object-center"
                   ></Image>
-                  <h3 className="tracking-widest text-indigo-700  font-medium title-font my-3">
+                  {/* <h3 className="tracking-widest text-indigo-700  font-medium title-font my-3">
                     {proyecto.tecnologias.toUpperCase()}
-                  </h3>
+                  </h3> */}
+                  <div className="flex text-gray-50">
+                    {proyecto.tecnologias.map((tecnologia, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="bg-indigo-500 m-1 rounded-lg px-1 justify-center items-center"
+                        >
+                          <small>{tecnologia}</small>
+                        </div>
+                      );
+                    })}
+                  </div>
+
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                     {proyecto.nombre}
                   </h2>
