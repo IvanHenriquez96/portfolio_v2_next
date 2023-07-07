@@ -92,23 +92,32 @@ export const SeccionProyectos = () => {
           {proyectos.map((proyecto, index) => {
             return (
               <div key={index} className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="bg-gray-100 p-6 rounded-lg hover:animate-wiggle">
                   <Image
                     src={proyecto.url_img}
                     width={1000}
                     height={1000}
                     alt="imagen proyecto"
-                    className="w-1/2 mx-auto md:w-full object-cover object-center"
+                    className="w-1/2 mx-auto md:w-full object-cover object-center border-4 p-2 border-indigo-900 rounded-full"
                   ></Image>
                   {/* <h3 className="tracking-widest text-indigo-700  font-medium title-font my-3">
                     {proyecto.tecnologias.toUpperCase()}
                   </h3> */}
-                  <div className="flex text-gray-50">
+
+                  <h2 className="text-lg text-indigo-900 font-medium title-font mb-4 my-5 text-center">
+                    {proyecto.nombre}
+                  </h2>
+
+                  <p className="leading-relaxed text-base text-indigo-700">
+                    {proyecto.descripcion}
+                  </p>
+
+                  <div className="flex flex-wrap justify-center text-gray-50 my-5">
                     {proyecto.tecnologias.map((tecnologia, index) => {
                       return (
                         <div
                           key={index}
-                          className="bg-indigo-500 m-1 rounded-lg px-1 justify-center items-center"
+                          className="bg-indigo-500 m-1 rounded-lg px-2 justify-center items-center"
                         >
                           <small>{tecnologia}</small>
                         </div>
@@ -116,16 +125,9 @@ export const SeccionProyectos = () => {
                     })}
                   </div>
 
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    {proyecto.nombre}
-                  </h2>
-                  <p className="leading-relaxed text-base text-indigo-700">
-                    {proyecto.descripcion}
-                  </p>
-                  <br />
-                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 ">
+                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 transition duration-300 ">
                     <a
-                      className="text-indigo-700 inline-flex items-center group-hover:text-gray-50 "
+                      className="text-indigo-700 inline-flex items-center group-hover:text-gray-50 transition duration-300 "
                       href={proyecto.url_sitio}
                       target="_blank"
                     >
@@ -133,9 +135,9 @@ export const SeccionProyectos = () => {
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                       >
@@ -143,7 +145,7 @@ export const SeccionProyectos = () => {
                       </svg>
                     </a>
                   </div>
-                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 ">
+                  <div className="group border-2 p-1 rounded-2xl border-indigo-700 text-center my-3 hover:bg-indigo-700 transition duration-300 ">
                     <a
                       className="text-indigo-700 inline-flex items-center group-hover:text-gray-50"
                       href={proyecto.url_repo}
@@ -153,9 +155,9 @@ export const SeccionProyectos = () => {
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                       >
