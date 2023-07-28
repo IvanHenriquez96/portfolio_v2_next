@@ -73,6 +73,15 @@ const proyectos = [
     url_sitio: "https://web-scraping-sigma.vercel.app/",
     url_repo: "https://github.com/IvanHenriquez96/web_scraping",
   },
+  {
+    nombre: "API DIGIMON - INFINITE SCROLL!",
+    descripcion:
+      "Aplicación hecha para poner a prueba la tecnica del scroll infinito, el cual trae nuevos datos siempre que el usuario llega al final de la página",
+    tecnologias: ["Nextjs", "Hybrid SSG/CSR", "API pública", "Tailwind"],
+    url_img: "/proyecto9_logo.png",
+    url_sitio: "https://next-infinite-scroll-zeta.vercel.app/",
+    url_repo: "https://github.com/IvanHenriquez96/next-infinite-scroll",
+  },
 ];
 
 export const SeccionProyectos = () => {
