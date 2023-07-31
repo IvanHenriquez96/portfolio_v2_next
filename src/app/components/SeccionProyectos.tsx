@@ -101,14 +101,16 @@ export const SeccionProyectos = () => {
           {proyectos.map((proyecto, index) => {
             return (
               <div key={index} className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg hover:animate-wiggle">
-                  <Image
-                    src={proyecto.url_img}
-                    width={1000}
-                    height={1000}
-                    alt="imagen proyecto"
-                    className="w-1/2 mx-auto md:w-full object-cover object-center border-4 p-2 border-indigo-900 rounded-full"
-                  ></Image>
+                <div className="bg-gray-100 p-6 rounded-lg ">
+                  <div className="md:w-5/12 mx-auto">
+                    <Image
+                      src={proyecto.url_img}
+                      width={1000}
+                      height={1000}
+                      alt="imagen proyecto"
+                      className="w-1/2 mx-auto md:w-full object-cover object-center border-4 p-2 border-indigo-900 rounded-full"
+                    ></Image>
+                  </div>
                   {/* <h3 className="tracking-widest text-indigo-700  font-medium title-font my-3">
                     {proyecto.tecnologias.toUpperCase()}
                   </h3> */}
