@@ -82,6 +82,15 @@ const proyectos = [
     url_sitio: "https://next-infinite-scroll-zeta.vercel.app/",
     url_repo: "https://github.com/IvanHenriquez96/next-infinite-scroll",
   },
+  {
+    nombre: "APP - GENERADOR DE CURIOSIDADES!",
+    descripcion:
+      "Prepárate para explorar preguntas que ni siquiera sabías que tenías y sumergirte en datos sorprendentes que ampliarán tus horizontes.",
+    tecnologias: ["Nextjs", "Hybrid SSG/CSR", "API pública", "Tailwind"],
+    url_img: "/proyecto10_logo.png",
+    url_sitio: "https://curiosidades-al-azar.vercel.app/",
+    url_repo: "https://github.com/IvanHenriquez96/curiosidades_al_azar",
+  },
 ];
 
 export const SeccionProyectos = () => {
