@@ -14,8 +14,8 @@ export const SeccionPresentacion = () => {
             trabajado en proyectos utilizando diversas tecnologías, y
             actualmente me especializo en NestJS, TypeScript, React, PostgreSQL
             y MongoDB!. No olviden pasarse por la sección de proyectos y echar
-            un vistazo (aun que actualemte están un poquito viejitos jaja 💙),
-            un saludo!
+            un vistazo (aun que al día de hoy están un poquito viejitos jaja
+            💙), un saludo!
           </p>
         </div>
         <div className="m-auto p-5 ">
