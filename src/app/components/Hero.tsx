@@ -59,7 +59,8 @@ export const Hero = () => {
         </div>
 
         <p className="text-center md:text-2xl text-gray-200 animate-fade-up">
-          Desarrollador Full Stack - PHP Laravel - Node - React - MYSQL
+          Desarrollador Full Stack - NestJS - Node - React - PostgreSQL -
+          MongoDB
         </p>
       </div>
       <div className="mx-auto col-span-2">

@@ -7,18 +7,28 @@ export const SeccionTecnologias = () => {
         <div className="brand-wheel">
           <div className="brand-slide">
             <div className="logo-div">
-              <Image src={"/php_logo.png"} width={50} height={50} alt="logo php"></Image>
-            </div>
-            <div className="logo-div">
               <Image
-                src={"/laravel_logo.png"}
+                src={"/ts_logo.png"}
                 width={50}
                 height={50}
                 alt="logo php"
               ></Image>
             </div>
             <div className="logo-div">
-              <Image src={"/node_logo.png"} width={50} height={50} alt="logo php"></Image>
+              <Image
+                src={"/nestjs_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
+            </div>
+            <div className="logo-div">
+              <Image
+                src={"/node_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
             </div>
             <div className="logo-div">
               <Image
@@ -30,7 +40,15 @@ export const SeccionTecnologias = () => {
             </div>
             <div className="logo-div">
               <Image
-                src={"/mysql_logo.png"}
+                src={"/postgresql_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
+            </div>
+            <div className="logo-div">
+              <Image
+                src={"/mongo_logo.png"}
                 width={50}
                 height={50}
                 alt="logo php"
@@ -39,18 +57,28 @@ export const SeccionTecnologias = () => {
           </div>
           <div className="brand-slide delay">
             <div className="logo-div">
-              <Image src={"/php_logo.png"} width={50} height={50} alt="logo php"></Image>
-            </div>
-            <div className="logo-div">
               <Image
-                src={"/laravel_logo.png"}
+                src={"/ts_logo.png"}
                 width={50}
                 height={50}
                 alt="logo php"
               ></Image>
             </div>
             <div className="logo-div">
-              <Image src={"/node_logo.png"} width={50} height={50} alt="logo php"></Image>
+              <Image
+                src={"/nestjs_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
+            </div>
+            <div className="logo-div">
+              <Image
+                src={"/node_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
             </div>
             <div className="logo-div">
               <Image
@@ -62,7 +90,15 @@ export const SeccionTecnologias = () => {
             </div>
             <div className="logo-div">
               <Image
-                src={"/mysql_logo.png"}
+                src={"/postgresql_logo.png"}
+                width={50}
+                height={50}
+                alt="logo php"
+              ></Image>
+            </div>
+            <div className="logo-div">
+              <Image
+                src={"/mongo_logo.png"}
                 width={50}
                 height={50}
                 alt="logo php"

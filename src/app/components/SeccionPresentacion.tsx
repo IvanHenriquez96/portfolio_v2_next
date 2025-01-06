@@ -9,15 +9,22 @@ export const SeccionPresentacion = () => {
           {/* <div className="h-1 w-2/3 md:w-2/4 mx-auto bg-indigo-500 rounded"></div> */}
 
           <p className="p-5 md:px-20 my-5 text-justify font-light">
-            Mi nombre es Iván Henríquez, tengo 26 años, nacionalidad chilena. Soy
-            Desarrollador Web FullStack, Trabajo profesionalmente desde Noviembre del año
-            2018 y actualmente estoy enfocado en dominar ambientes de Javascript (Stack
-            MERN para ser mas preciso) no olviden pasarse por la sección de proyectos y
-            echar un vistazo, un saludos!
+            Mi nombre es Iván Henríquez, Desarrollador web FullStack con más de
+            seis años de experiencia profesional. Desde noviembre de 2018, he
+            trabajado en proyectos utilizando diversas tecnologías, y
+            actualmente me especializo en NestJS, TypeScript, React, PostgreSQL
+            y MongoDB!. No olviden pasarse por la sección de proyectos y echar
+            un vistazo (aun que actualemte están un poquito viejitos jaja 💙),
+            un saludo!
           </p>
         </div>
         <div className="m-auto p-5 ">
-          <Image src={"/saludo.png"} width={200} height={200} alt="icono saludo" />
+          <Image
+            src={"/saludo.png"}
+            width={200}
+            height={200}
+            alt="icono saludo"
+          />
         </div>
       </div>
     </div>
